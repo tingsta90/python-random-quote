@@ -1,16 +1,15 @@
 import random
-
+print('Ditt favoritdjur är:')
 def roligt():
-  # print("Keep it logically awesome.")
 
-  f = open("quotes.txt")
-  quotes = f.readlines()
+  f = open("jenny.txt")
+  djur = f.readlines()
   f.close()
 
-  last = len(quotes) - 1
-  rnd = random.randint(0, last)
+  katt = len(djur) - 1
+  jennysrandom = random.randint(0, katt)
 
-  print(quotes[rnd])
+  print(djur[jennysrandom])
 
 if __name__== "__main__":
   roligt()
